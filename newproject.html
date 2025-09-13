@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center; background-color: chartreuse;  ">Learn DSA & Web Development For Free From Coder Army</h1>
+        <nav style="background-color: burlywood;">
+            <ol>
+                <h1>Data Structures & Algorithms</h1>
+                <li><a href="#first"> c++ Introduction</a></li>
+                <li><a href="#com">C++ compiler</a></li>
+                <li><a href="#second">Array</a></li>
+                <li><a href="#third">Tree</a></li>
+                <li><a href="#fourth">Graph</a></li>
+            </ol>
+            <ol>
+                <h1>Web Development</h1>
+                <li><a href="#html">HTML</a></li>
+                <li><a href="#css">CSS</a></li>
+        </nav>
+    </header>
+    <main>
+        <!-- c++ Introduction -->
+         <section id="first">
+         <h2>Inroduction TO C++</h2>
+         <p>C++ is a powerful, high-level programming language known for its efficiency and versatility. It's an extension of the C language, adding object-oriented features, and is widely used in system programming, game development, and high-performance applications. C++ is considered a good choice when speed and performance are critical. </p>
+         <h3>Features Of C++</h3>
+            <ul>
+            <li>Object-Oriented Programming
+                <ul>
+                <li>Supports classes, objects, inheritance, polymorphism, etc.</li>
+                </ul>
+            </li>
+            <li>Simple and Easy
+                <ul>
+                <li>Extension of C language with added features.</li>
+                </ul>
+            </li>
+            <li>Rich Library Support
+                <ul>
+                <li>Includes STL for data structures and algorithms.</li>
+                </ul>
+            </li>
+            <li>Platform Independent
+                <ul>
+                <li>Code can run on any system with a C++ compiler.</li>
+                </ul>
+            </li>
+            <li>Fast and Efficient
+                <ul>
+                <li>Compiled language with high performance.</li>
+                </ul>
+            </li>
+            <li>Multi-Paradigm
+                <ul>
+                <li>Supports both procedural and OOP styles.</li>
+                </ul>
+            </li>
+            <li>Memory Management
+                <ul>
+                <li>Uses `new` and `delete` for dynamic memory.</li>
+                </ul>
+            </li>
+            </ul>
+        <h2>Basic Syntax</h2>
+            <pre style="background-color: aquamarine; ">
+            #include &lt;iostream&gt;
+            using namespace std;
+
+            int main() {
+                cout &lt;&lt; "Hello, World!" &lt;&lt; endl;
+                return 0;
+            }
+            </pre>
+        <ul>
+            <li>#include &lt;iostream&gt;:  Includes the input/output library for cout and cin</li>
+            <li>using namespace std; :Allows use of standard functions without std:: prefix.</li>
+            <li>int main():Starting point of the program.</li>
+            <li>cout &lt;&lt; "Hello, World!" &lt;&lt; endl; :Prints output to the screen,endl moves the cursor to the next line.</li>
+            <li>return 0; : Indicates successful program execution.</li>
+        </ul>
+        <h3>Application of C++</h3>
+            <ol>
+            <li>System Programming
+                <ul>
+                <li>Used to build operating systems, compilers, and device drivers.</li>
+                </ul>
+            </li>
+            <li>Game Development
+                <ul>
+                <li>Used for high-performance game engines due to its speed and graphics libraries.</li>
+                </ul>
+            </li>
+            <li>Embedded Systems
+                <ul>
+                <li>Used in firmware and microcontroller programming for appliances, vehicles, etc.</li>
+                </ul>
+            </li>
+            <li>GUI and Desktop Applications
+                <ul>
+                <li>Used to develop desktop software like media players, photo editors, etc.</li>
+                </ul>
+            </li>
+            </ol>
+        </section>
+
+        <section id="com">
+        <!-- c++ compiler -->
+         <h2 style="background-color: aqua; display: inline;">Online CPP compiler </h2>
+         <iframe src="https://onecompiler.com/cpp" frameborder="0" height="600"  width="100%" title="Online CPP compiler"></iframe>
+         <br>
+         <br>
+        </section>
+        <!-- array -->
+         <section id="second">
+         <h2>Inroduction to Arrays</h2>
+         <h3>what is an array</h3>
+         <p>An array is a data structure that stores a collection of elements, typically of the same data type, in contiguous memory locations. These elements are accessed via an index, usually starting from 0. Arrays are fundamental for organizing and efficiently manipulating large sets of data. </p>
+         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240410101419/Getting-Started-with-Array-Data-Structure.webp" alt="Array Picture">
+         <h3>Characteristics Of Array</h3>
+         <ul>
+            <li>Fixed Size (in most traditional implementations):
+                Once an array is declared, its size is usually fixed and cannot be changed during runtime. This requires knowing the maximum number of elements needed beforehand. </li>
+        <li>Indexed Access:
+            Each element in an array is assigned a unique integer index, which identifies its position. Indexing typically starts at 0 for the first element. </li>
+        <li>Homogeneous Elements:
+            Arrays typically store elements of the same data type. For example, an array might contain only integers, or only characters, but not a mix of different types.</li>
+         </ul>
+         <br>
+         <br>
+         <h3>Type Of Arrays</h3>
+         <ol>
+            <li> One-Dimensional Array
+                <ul>
+                    <li>It is a linear data structure that stores elements in a single row.</li>
+                    <li>All elements are stored in contiguous memory locations.</li>
+                    <li>Accessed using a single index.</li>
+                    <li>Example: int arr[5];</li>
+                </ul>
+            </li>
+            <li>Two-Dimensional Array
+                <ul>
+                    <li>It is a matrix-like structure with rows and columns.</li>
+                    <li>Accessed using two indices: arr[i][j].</li>
+                    <li>Stored in row-major or column-major order in memory.</li>
+                    <li>Example: int arr[3][4];</li>
+                </ul>
+            </li>
+            <li> Multi-Dimensional Array
+                <ul>
+                    <li>Arrays with more than two dimensions (3D, 4D, etc.)</li>
+                    <li>Accessed using multiple indices: arr[i][j][k] and so on.</li>
+                    <li>Example: int arr[2][3][4];
+
+                    </li>
+                </ul>
+            </li>
+         </ol>
+         <h2>Tutorial For Array</h2>
+         <table>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/moZNKL37w-s" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/567332frcF0" frameborder="0"height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/hUdqNPhXOh4" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/9_B6TmAHveU" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/V3vM_m2iFtk" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/YpZUgiT1N94" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+         </table>
+         </section>
+         
+        <!-- tree -->
+         <section id="third">
+         <h2>Introduction to Trees</h2>
+         <p>Trees, in the context of data structures, are hierarchical, non-linear data structures. They consist of nodes connected by edges, representing a parent-child relationship. Unlike linear data structures like arrays or linked lists, trees have a branching structure, with one node designated as the root and other nodes branching out from it. </p>
+         <img src="https://media.geeksforgeeks.org/wp-content/uploads/20240424125622/Introduction-to-tree-.webp" alt="Tree image">
+         <br>
+         <br>
+         <h3>Characteristics Of Tree</h3>
+         <ul>
+            <li>Hierarchical Structure
+                <ul>
+                    <li>Organized in parent-child relationships (like a family tree).</li>
+                </ul>
+            </li>
+            <li>One Root Node
+                <ul>
+                    <li>Only one node is the root (starting point of the tree).</li>
+                </ul>
+            </li>
+            <li>No Cycles
+                <ul>
+                    <li>Trees do not contain any loops or cycles.</li>
+                </ul>
+            </li>
+            <li>Connected Graph
+                <ul>
+                    <li>Every node is connected directly or indirectly to the root.</li>
+                </ul>
+            </li>
+            <li>N – 1 Edges
+                <ul>
+                    <li>A tree with N nodes always has N – 1 edges.</li>
+                </ul>
+            </li>
+            <li>Recursive Nature
+                <ul>
+                    <li>A tree is a recursive structure — each subtree is also a tree.</li>
+                </ul>
+            </li>
+            <li>Dynamic Size
+                <ul>
+                    <li>Tree can grow or shrink easily without memory reallocation issues.</li>
+                </ul>
+            </li>
+            <li>Multiple Level
+                <ul>
+                    <li>Nodes are organized in levels (root at level 0, its children at level 1, etc.)</li>
+                </ul>
+            </li>
+         </ul>
+         <h3>Types of Trees </h3>
+        <ul>
+            <li>General Tree:
+                <ul>
+                <li>Each node can have any number of children.</li>
+                <li>Most basic form of a tree.</li>
+                </ul>
+            </li>
+
+            <li>Binary Tree:
+                <ul>
+                <li>Each node has at most 2 children.</li>
+                <li>Left and Right child.</li>
+                </ul>
+            </li>
+
+            <li>Full Binary Tree:
+                <ul>
+                <li>Every node has 0 or 2 children.</li>
+                <li>No node has only one child.</li>
+                </ul>
+            </li>
+
+            <li>Complete Binary Tree:
+                <ul>
+                <li>All levels are completely filled except possibly the last.</li>
+                <li>Last level is filled from left to right.</li>
+                </ul>
+            </li>
+
+            <li>Perfect Binary Tree:
+                <ul>
+                <li>All internal nodes have 2 children.</li>
+                <li>All leaves are at the same level.</li>
+                </ul>
+            </li>
+
+            <li> Balanced Binary Tree:
+                <ul>
+                <li>Height difference between left and right subtree is at most 1.</li>
+                </ul>
+            </li>
+
+            <li>Binary Search Tree (BST):
+                <ul>
+                <li>Left subtree &lt; Root &lt; Right subtree.</li>
+                <li>Used for efficient searching.</li>
+                </ul>
+            </li>
+
+            <li> AVL Tree:
+                <ul>
+                <li>Self-balancing BST.</li>
+                <li>Balancing factor (height diff) is maintained.</li>
+                </ul>
+            </li>
+
+            <li>Red-Black Tree:
+                <ul>
+                <li>Self-balancing BST using coloring rules.</li>
+                <li>Ensures operations in O(log n) time.</li>
+                </ul>
+            </li>
+
+            <li> B-Tree:
+                <ul>
+                <li>Multi-way search tree used in databases and file systems.</li>
+                <li>Keeps data sorted and allows searches in logarithmic time.</li>
+                </ul>
+            </li>
+
+            <li> Heap Tree:
+                <ul>
+                <li>Complete binary tree.</li>
+                <li>Max-Heap: Parent ≥ Children</li>
+                <li>Min-Heap: Parent ≤ Children</li>
+                </ul>
+            </li>
+
+            <li>Trie (Prefix Tree):
+                <ul>
+                <li>Used to store a set of strings.</li>
+                <li>Efficient for searching words, especially in dictionaries.</li>
+                </ul>
+            </li>
+            </ul>
+            <h3>Application of Tree</h3>
+            <ol>
+                <li>Hierarchical Data Representation:
+                    <pre>
+                            File Systems:
+                            Trees model the directory structure of file systems, with folders as nodes and files as leaves. 
+                            Organizational Charts:
+                            Representing the hierarchy within an organization, with employees as nodes and reporting lines as branches. 
+                            XML/HTML Documents:
+                            Trees represent the structure of these documents, with elements as nodes and attributes as leaves.    
+                    </pre>
+                </li>
+                <li>Data Storage and Retrieval:
+                    <pre>
+                        Databases:
+                        Tree-based indexing, like B-trees and B+ trees, enables efficient data retrieval in databases. 
+                        Binary Search Trees (BSTs):
+                        Offer efficient search, insertion, and deletion operations, making them suitable for sorted data. 
+                        Heaps:
+                        Tree-based data structures used to implement priority queues, prioritizing elements based on their values. 
+                        Tries:
+                        Efficiently store and retrieve data based on prefixes, useful for tasks like auto-completion and spell checking. 
+                    </pre>
+                </li>
+                <li>Compilers and Interpreters:
+                    <pre>
+                        Syntax Trees:
+                        Parsers in compilers use syntax trees to represent the structure of source code, aiding in compilation. 
+                        Abstract Syntax Trees (ASTs):
+                        Trees representing the abstract syntactic structure of source code, used in code analysis and optimization. 
+                    </pre>
+                </li>
+            </ol>
+            <br>
+            <br>
+            <h2>Tutorial For Trees</h2>
+            <table>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/_b0bfpO3b4I" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/P30p5jYsiDc" frameborder="0"height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/T78jHD4fNgc" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/f7IZ0IXLvhI" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/z9GM2HB4mUk" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/wusLRj3XUdE" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+         </table>
+         <br><br>
+        </section>
+
+
+        <!-- graph -->
+         <section id="fourth">
+            <h2>Introduction to Graphs</h2>
+            <p>Graphs are non-linear data structures consisting of nodes (called vertices) connected by edges. Unlike trees, graphs can have cycles, multiple paths, and can be either directed or undirected. They are widely used to model pairwise relationships between objects in the real world, such as roads connecting cities, links between web pages, or social media connections.</p>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20200630111809/graph18.jpg" alt="Graph image">
+            <br>
+            <br>
+
+            <h3>Characteristics Of Graph</h3>
+            <ul>
+                <li>Set of Vertices
+                    <ul>
+                        <li>Graphs consist of a finite set of vertices (or nodes).</li>
+                    </ul>
+                </li>
+                <li>Set of Edges
+                    <ul>
+                        <li>Edges connect pairs of vertices, representing relationships.</li>
+                    </ul>
+                </li>
+                <li>Can Be Directed or Undirected
+                    <ul>
+                        <li>Directed: Edges have direction (A → B).</li>
+                        <li>Undirected: Edges have no direction (A — B).</li>
+                    </ul>
+                </li>
+                <li>May Contain Cycles
+                    <ul>
+                        <li>Unlike trees, graphs can have cycles.</li>
+                    </ul>
+                </li>
+                <li>Can Be Weighted
+                    <ul>
+                        <li>Edges can have weights representing cost, distance, etc.</li>
+                    </ul>
+                </li>
+                <li>Representation Methods
+                    <ul>
+                        <li>Adjacency Matrix</li>
+                        <li>Adjacency List</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Types of Graphs</h3>
+            <ul>
+                <li>Undirected Graph
+                    <ul>
+                        <li>Edges do not have a direction.</li>
+                    </ul>
+                </li>
+                <li> Directed Graph (Digraph)
+                    <ul>
+                        <li>Edges have direction from one vertex to another.</li>
+                    </ul>
+                </li>
+                <li>Weighted Graph
+                    <ul>
+                        <li>Edges have weights or costs assigned to them.</li>
+                    </ul>
+                </li>
+                <li>Unweighted Graph
+                    <ul>
+                        <li>No weights are associated with edges.</li>
+                    </ul>
+                </li>
+                <li>Cyclic Graph
+                    <ul>
+                        <li>Graph contains at least one cycle.</li>
+                    </ul>
+                </li>
+                <li> Acyclic Graph
+                    <ul>
+                        <li>Graph contains no cycles.</li>
+                    </ul>
+                </li>
+                <li>Connected Graph
+                    <ul>
+                        <li>There is a path between every pair of vertices.</li>
+                    </ul>
+                </li>
+                <li>Disconnected Graph
+                    <ul>
+                        <li>Not all vertices are connected.</li>
+                    </ul>
+                </li>
+                <li>Complete Graph
+                    <ul>
+                        <li>Each pair of vertices is connected by a unique edge.</li>
+                    </ul>
+                </li>
+                <li> Bipartite Graph
+                    <ul>
+                        <li>Vertices can be divided into two disjoint sets.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h3>Applications of Graphs</h3>
+            <ol>
+                <li> Networking
+                    <pre>
+                        Computer Networks:
+                        Routers and connections are represented using graphs.
+
+                        Social Networks:
+                        Users and their connections can be modeled as graphs.
+
+                        Internet/Web Graph:
+                        Websites as nodes, hyperlinks as directed edges.
+                    </pre>
+                </li>
+
+                <li> Routing and Navigation
+                    <pre>
+                        GPS and Maps:
+                        Graphs help in finding the shortest path (e.g., Dijkstra’s Algorithm).
+
+                        Transport Systems:
+                        Stations and routes can be modeled as graphs.
+                    </pre>
+                </li>
+
+                <li> Data Structures and Algorithms
+                    <pre>
+                        Graph Traversal:
+                        Algorithms like DFS, BFS, used in AI, games, etc.
+
+                        Cycle Detection:
+                        Useful in detecting deadlocks or checking dependencies.
+
+                        Minimum Spanning Tree:
+                        Algorithms like Kruskal’s and Prim’s are used in network design.
+                    </pre>
+                </li>
+
+                <li> Compilers and Schedulers
+                    <pre>
+                        Dependency Graphs:
+                        Represent instruction or task dependencies.
+
+                        Topological Sorting:
+                        Used for scheduling tasks without circular dependencies.
+                    </pre>
+                </li>
+            </ol>
+            <h3>Tutorial For Graph</h3>
+            <table>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/gGlfzqPT-hE" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/bxbrUGvBCnY" frameborder="0"height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/Vtu7qgF0ksw" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+            <tr>
+                <td><iframe src="https://www.youtube.com/embed/oz1EaP_Bw4s" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/2JgYwQ6TZ44" frameborder="0" height="250" width="400"></iframe></td>
+                <td><iframe src="https://www.youtube.com/embed/sPlN86EpjJA" frameborder="0" height="250" width="400"></iframe></td>
+            </tr>
+         </table>
+         <br><br>
+        </section>
+
+    <section id="html">
+            <h2>Introduction to HTML</h2>
+            <p>HTML (HyperText Markup Language) is the standard language used to create webpages. It provides the structure and layout of a website by using elements called <b>tags</b>. These tags tell the browser how to display text, images, links, and other content.</p>
+             <h2>Basic Structure of an HTML Document</h2>
+    <pre><code>&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
+        &lt;head&gt;
+            &lt;title&gt;My Webpage&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Hello World!&lt;/h1&gt;
+            &lt;p&gt;This is a paragraph.&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code></pre>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt; – Declares the document type and version of HTML.</li>
+        <li>&lt;html&gt; – Root element of the page.</li>
+        <li>&lt;head&gt; – Contains meta information, title, styles, and links to scripts.</li>
+        <li>&lt;body&gt; – Contains the visible content of the page.</li>
+    </ul>
+
+    <h2>Common HTML Tags</h2>
+    <ul>
+        <li>&lt;h1&gt; to &lt;h6&gt; – Headings (largest to smallest)</li>
+        <li>&lt;p&gt; – Paragraph</li>
+        <li>&lt;a href="url"&gt; – Hyperlink</li>
+        <li>&lt;img src="image.jpg"&gt; – Image</li>
+        <li>&lt;ul&gt; / &lt;ol&gt; / &lt;li&gt; – Lists</li>
+        <li>&lt;table&gt; / &lt;tr&gt; / &lt;td&gt; – Tables</li>
+        <li>&lt;form&gt;, &lt;input&gt;, &lt;button&gt; – Forms</li>
+    </ul>
+    <h2>Attributes</h2>
+    <p>HTML tags can have attributes that provide extra information:</p>
+    <ul>
+        <li>href – Specifies link destination (for &lt;a&gt;)</li>
+        <li>src – Specifies image/video source</li>
+        <li>alt – Alternative text for images</li>
+        <li>id / class – Used for CSS styling or JavaScript</li>
+        <li>style – Inline CSS styling</li>
+    </ul>
+
+    <h2>Forms & User Input</h2>
+    <pre><code>&lt;form action="submit.php" method="post"&gt;
+    &lt;input type="text" name="username" placeholder="Enter name"&gt;
+    &lt;input type="password" name="password"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+
+    <h2>Semantic Elements</h2>
+    <ul>
+        <li>&lt;header&gt; – Page header</li>
+        <li>&lt;nav&gt; – Navigation links</li>
+        <li>&lt;main&gt; – Main content</li>
+        <li>&lt;section&gt; – Section of a page</li>
+        <li>&lt;article&gt; – Self-contained content</li>
+        <li>&lt;footer&gt; – Page footer</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>HTML is the foundation of all web pages. When combined with CSS (for styling) and JavaScript (for interactivity), it allows you to create fully functional and interactive websites.</p>
+    <h3>Tutorial For HTML</h3>
+            <table>
+                <tr>
+                    <td><iframe src="https://www.youtube.com/embed/1pcikNlDB-4" frameborder="0" height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/GkZN_-HMCJ8" frameborder="0"height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/AJ4E1zf5tQs" frameborder="0" height="250" width="400"></iframe></td>
+                </tr>
+                <tr>
+                    <td><iframe src="https://www.youtube.com/embed/k78lNSAB8VY" frameborder="0" height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/a4j9R_DvZ8M" frameborder="0" height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/NGYp1zCBthk" frameborder="0" height="250" width="400"></iframe></td>
+                </tr>
+            </table>
+            <br><br>
+        </section>
+
+        <!-- css -->
+         
+        <section id="css">
+            <h2>Introduction to CSS</h2>
+            <h3>CSS – Cascading Style Sheets</h3>
+            <p>CSS (Cascading Style Sheets) is used to style and format HTML pages. It controls how elements look on a webpage — including colors, fonts, layouts, spacing, and animations.</p>
+
+            <h3>Introduction</h3>
+            <p>CSS allows developers to separate content from design, making web pages cleaner and easier to maintain.</p>
+
+            <h3>Why Use CSS?</h3>
+            <ul>
+                <li>Separates content (HTML) from design (CSS).</li>
+                <li>Makes webpages look attractive and professional.</li>
+                <li>Allows consistent styling across multiple pages.</li>
+                <li>Reduces code duplication and improves maintainability.</li>
+            </ul>
+
+            <h3>Types of CSS</h3>
+            <ul>
+                <li><b>Inline CSS:</b> Written inside the HTML tag using the <code>style</code> attribute.</li>
+                <li><b>Internal CSS:</b> Written inside a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.</li>
+                <li><b>External CSS:</b> Written in a separate <code>.css</code> file and linked using <code>&lt;link&gt;</code>.</li>
+            </ul>
+
+            <h3>Basic Syntax</h3>
+            <pre><code>selector {
+            property: value;
+        }
+        </code></pre>
+            <p>Example:</p>
+            <pre><code>p {
+            color: red;
+            font-size: 18px;
+        }
+        </code></pre>
+
+            <h3>Selectors</h3>
+            <ul>
+                <li><b>Element Selector:</b> Applies style to all elements of that type (e.g., <code>p {}</code>).</li>
+                <li><b>ID Selector:</b> Targets a specific element using <code>#id</code>.</li>
+                <li><b>Class Selector:</b> Targets elements with a specific class using <code>.class</code>.</li>
+                <li><b>Group Selector:</b> Applies same style to multiple elements (e.g., <code>h2, h3, p {}</code>).</li>
+                <li><b>Universal Selector:</b> Applies style to all elements (e.g., <code>* {}</code>).</li>
+            </ul>
+
+            <h3>Common CSS Properties</h3>
+            <ul>
+                <li><b>Color & Background:</b> <code>color</code>, <code>background-color</code>, <code>background-image</code></li>
+                <li><b>Text:</b> <code>font-size</code>, <code>font-family</code>, <code>text-align</code></li>
+                <li><b>Box Model:</b> <code>margin</code>, <code>padding</code>, <code>border</code>, <code>width</code>, <code>height</code></li>
+                <li><b>Positioning:</b> <code>position</code>, <code>top</code>, <code>left</code>, <code>z-index</code></li>
+                <li><b>Display:</b> <code>block</code>, <code>inline</code>, <code>flex</code>, <code>grid</code></li>
+            </ul>
+
+            <h3>Box Model</h3>
+            <p>Every HTML element is considered a box consisting of:</p>
+            <ul>
+                <li><b>Content:</b> Text or image inside the box.</li>
+                <li><b>Padding:</b> Space between content and border.</li>
+                <li><b>Border:</b> The outline around the padding/content.</li>
+                <li><b>Margin:</b> Space outside the border.</li>
+            </ul>
+
+            <h3>Responsive Design</h3>
+            <p>CSS supports responsive layouts using:</p>
+            <ul>
+                <li><b>Media Queries:</b> <code>@media (max-width: 600px) {...}</code></li>
+                <li><b>Flexible Units:</b> %, em, rem, vh, vw</li>
+                <li><b>Flexbox & CSS Grid:</b> For building adaptive layouts.</li>
+            </ul>
+
+            <h3>Conclusion</h3>
+            <p>CSS is essential for making webpages visually appealing and responsive. Combined with HTML and JavaScript, it allows developers to create modern, interactive websites.</p>
+            <h3>Tutorial For CSS</h3>
+            <table>
+                <tr>
+                    <td><iframe src="https://www.youtube.com/embed/7rrUVevoECg" frameborder="0" height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/MluY-_FUxFI" frameborder="0"height="250" width="400"></iframe></td>
+                    <td><iframe src="https://www.youtube.com/embed/HwvOyrPDqhM" frameborder="0" height="250" width="400"></iframe></td>
+                </tr>
+                <tr>
+                    <td><iframe src="https://www.youtube.com/embed/KD5mNp8PTko" frameborder="0" height="250" width="400"></iframe></td>
+                </tr>
+            </table>
+
+        </section>
+
+
+    </main>
+    <footer>
+        <p>&copy; All Rights are reserved by Somnath Mondal</p>
+    </footer>
+</body>
+</html>
